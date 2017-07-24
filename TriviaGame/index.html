@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>Jazz Pianist Trivia</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+</head>
+
+<body class="text-center">
+    <header class="jumbotron">
+        <h1>Jazz Pianist Trivia</h1>
+        <h3>Time Remaining: <span id="timer"></span> Seconds</h3>
+    </header>
+
+    <div id="firstscreen">
+        <button class ="btn" id="startbutton">Start Trivia</button>
+    </div>
+    
+    <div id="secondscreen">
+        <div class="question1">
+            <h3>Which of these pianists composed "Round Midnight"?</h3>
+            <input id="testy" type="radio" id="trivia1_1" name="answer1" value="true">
+            <label for="trivia1_1">Thelonius Monk</label>
+            <input type="radio" id="trivia1_2" name="answer1" value="false">
+            <label for="trivia1_2">Herbie Hancock</label>
+            <input type="radio" id="trivia1_3" name="answer1" value="false">
+            <label for="trivia1_3">Bud Powell</label>
+            <input type="radio" id="trivia1_4" name="answer1" value="false">
+            <label for="trivia1_4">Oscar Peterson</label>
+        </div>
+        <div class="question2">
+            <h3>Which of these pianists could not read music?</h3>
+            <input type="radio" id="triva2_1" name="answer2" value="false">
+            <label for="triva2_1">Duke Ellington</label>
+            <input type="radio" id="trivia2_2" name="answer2" value="false">
+            <label for="trivia2_2">Chick Corea</label>
+            <input type="radio" id="trivia2_3" name="answer2" value="true">
+            <label for="trivia2_3">Eroll Garner</label>
+            <input type="radio" id="trivia2_4" name="answer2" value="false">
+            <label for="trivia2_4">Bill Evans</label>
+        </div>
+        <div class="question3">
+            <h3>Which Pianist turned down an offer to join Miles Davis's Band?</h3>
+            <input type="radio" id="triva3_1" name="answer3" value="false">
+            <label for="triva3_1">Wynton Kelly</label>
+            <input type="radio" id="trivia3_2" name="answer3" value="true">
+            <label for="trivia3_2">Ahmad Jamal</label>
+            <input type="radio" id="trivia3_3" name="answer3" value="false">
+            <label for="trivia3_3">Herbie Hancock</label>
+            <input type="radio" id="trivia3_4" name="answer3" value="false">
+            <label for="trivia3_4">Red Garland</label>
+        </div>
+        <div class="question4">
+            <h3>Which of these Pianists was Blind?</h3>
+            <input type="radio" id="triva4_1" name="answer4" value="false">
+            <label for="triva4_1">Herbie Nichols</label>
+            <input type="radio" id="trivia4_2" name="answer4" value="false">
+            <label for="trivia4_2">Earl Hines</label>
+            <input type="radio" id="trivia4_3" name="answer4" value="false">
+            <label for="trivia4_3">Paul Bley</label>
+            <input type="radio" id="trivia4_4" name="answer4" value="true">
+            <label for="trivia4_4">Art Tatum</label>
+        </div>
+        <div class="question5">
+            <h3>This Pianist Played an famous solo on the blues "Freddie Freeloader" from Miles Davis's <em>Kind Of Blue</em> Album.</h3>
+            <input type="radio" id="triva5_1" name="answer5" value="true">
+            <label for="triva5_1">Wynton Kelly</label>
+            <input type="radio" id="trivia5_2" name="answer5" value="false">
+            <label for="trivia5_2">Bill Evans</label>
+            <input type="radio" id="trivia5_3" name="answer5" value="false">
+            <label for="trivia5_3">John Lewis</label>
+            <input type="radio" id="trivia5_4" name="answer5" value="false">
+            <label for="trivia5_4">Red Garland</label>
+        </div>
+        <div class="question6">
+            <h3>Who was the pianist in the Miles Davis "Second Great Quintet"?</h3>
+            <input type="radio" id="triva6_1" name="answer6" value="false">
+            <label for="triva6_1">Chick Corea</label>
+            <input type="radio" id="trivia6_2" name="answer6" value="true">
+            <label for="trivia6_2">Herbie Hancock</label>
+            <input type="radio" id="trivia6_3" name="answer6" value="false">
+            <label for="trivia6_3">Keith Jarrett</label>
+            <input type="radio" id="trivia6_4" name="answer6" value="false">
+            <label for="trivia6_4">Joe Zawinul</label>
+        </div>
+        <div class="question7">
+            <h3>This Pianist was featured on Wynton Marsalis's album <em>Black Codes From the Underground.</em></h3>
+            <input type="radio" id="triva7_1" name="answer7" value="false">
+            <label for="triva7_1">Eric Reed</label>
+            <input type="radio" id="trivia7_2" name="answer7" value="false">
+            <label for="trivia7_2">Marcus Roberts</label>
+            <input type="radio" id="trivia7_3" name="answer7" value="false">
+            <label for="trivia7_3">Ellis Marsalis</label>
+            <input type="radio" id="trivia7_4" name="answer7" value="true">
+            <label for="trivia7_4">Kenny Kirkland</label>
+        </div>
+        <div class="question8">
+            <h3>This Pianist was a Professional Boxer before beginning his career in Jazz.</h3>
+            <input type="radio" id="triva8_1" name="answer8" value="false">
+            <label for="triva8_1">Count Basie</label>
+            <input type="radio" id="trivia8_2" name="answer8" value="false">
+            <label for="trivia8_2">Mccoy Tyner</label>
+            <input type="radio" id="trivia8_3" name="answer8" value="true">
+            <label for="trivia8_3">Red Garland</label>
+            <input type="radio" id="trivia8_4" name="answer8" value="false">
+            <label for="trivia8_4">Walter Davis</label>
+        </div>
+        <div class="done">
+            <button class ="btn" id="donebtn">Done</button>
+        </div>
+    </div>
+    <div id="lastscreen">
+        <h4>Correct: <span id="numcorrect"></span></h4>
+        <h4>Incorrect: <span id="numwrong"></span></h4>
+        <h4>Unanswered: <span id="unanswered"></span></h4>
+    </div>
+</body>
+<script type="text/javascript" src="assets/javascript/app.js">
+</script>
+
+</html>
