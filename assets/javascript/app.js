@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    var correct = 0;
+    var incorrect = 0;
+    // var unanswered = 0;
+
 
     var timeleft = 30;
     $('#timer').html(timeleft);
@@ -41,18 +45,22 @@ $(document).ready(function() {
         run();
 
         $('input').click(function() {
-        var correct = 0;
-        var incorrect = 0;
+            
+            
+            var answer = $(this).attr('value');
+            if (answer == 'true') {
+                correct++;
+            } else if (answer == 'false') {
+                incorrect++;
+            };
 
-        var answer = $(this).attr('value');
-        if (answer == 'true') {
-            correct++;
-        } else if (answer == 'false') {
-            incorrect++;
-        };
+            unanswered = 8 - (correct + incorrect);
+            console.log(correct);
 
-        var unanswered = 8 - (correct + incorrect);
-          });
+            $('#numcorrect').html(correct);
+            $('#numwrong').html(incorrect);
+            $('#unanswered').html(unanswered);
+        });
 
 
         $('#donebtn').on('click', function() {
@@ -62,9 +70,7 @@ $(document).ready(function() {
     });
 
     function lastScreen() {
-        // $('#numcorrect').html(correct);
-        // $('#numwrong').html(incorrect);
-        // $('#unanswered').html(unanswered);
+        
        
         $('#firstscreen').hide();
         $('#secondscreen').hide();

@@ -1,4 +1,8 @@
-html {
+body {
 	/*background-image: url('../images/piano.jpg');*/
+	
+}
 
+.done {
+	margin: 30px;
 }
